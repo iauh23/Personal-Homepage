@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Ibrahim Asad</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            
+             <!-- Slideshow Container -->
+             <div class="slideshow-container">
+
+                <!-- First Project Slide -->
+                <div class="project-slide fade">
+                    <img src="images/project11.jpeg" alt="Project 1" class="project-image">
+                    <div class="project-overlay">
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Second Project Slide -->
+                <div class="project-slide fade">
+                    <img src="images/project12.jpeg" alt="Project 2" class="project-image">
+                    <div class="project-overlay">
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Third Project Slide -->
+                <div class="project-slide fade">
+                    <img src="images/project13.jpeg" alt="Project 3" class="project-image">
+                    <div class="project-overlay">
+                        
+                        
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="container about-content"></div>
+            <img src="images/profile.jpg" alt="Ibrahim Asad" style="width:330px;height:350px;">
+            <p>Hello! I'm Ibrahim Asad, a passionate developer with a love for creating intuitive applications that make life easier. I have a background in [your field/education], and I'm constantly looking for new challenges and opportunities to grow. You can check my <a href="resume.pdf" target="_blank">resume</a> by clicking on it.</p>
+            <div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Proficient in Python programming with experience in web development, data analysis, and automation.</p>
+                <div class="progress-bar" style="position: relative; background-color: #e0e0e0; border-radius: 5px; height: 20px; width: 100%;">
+                    <div class="progress" style="width: 60%; background-color: #76c7c0; height: 100%; border-radius: 5px;">
+                        <span style="position: absolute; left: 50%; transform: translateX(-50%); color: white;">60%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slideshow Section -->
+            <div class="slideshow-container">
+                <!-- Slide 1 -->
+                <div class="mySlides">
+                    <img src="images/project1.jpg" alt="Project 1" class="slide-image">
+                    <div class="overlay">
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="mySlides">
+                    <img src="images/project2.jpg" alt="Project 2" class="slide-image">
+                    <div class="overlay">
+                        
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="mySlides">
+                    <img src="images/project3.jpg" alt="Project 3" class="slide-image">
+                    <div class="overlay">
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="mySlides">
+                    <img src="images/project4.jpg" alt="Project 4" class="slide-image">
+                    <div class="overlay">
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="mySlides">
+                    <img src="images/project5.jpg" alt="Project 5" class="slide-image">
+                    <div class="overlay">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Ibrahim Asad</p>
+        <p>
+            <a href="https://www.facebook.com/ibrahim.assf.90/" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a> |
+            <a href="https://www.instagram.com/ibrahim_asad467/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a> |
+            <a href="mailto:ia4435463@gmail.com">
+                <i class="fas fa-envelope"></i> Email
+            </a> |
+            <a href="https://wa.me/+923484834371" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.mySlides');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        showSlide(currentSlide);
+
+        // Optional: Show the next slide every 3 seconds
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 3000);
+    </script>
+</body>
+</html>
+
+

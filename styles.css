@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    position: relative;
+    display: block;
+}
+
+.project-slide {
+    display: none;
+    position: relative;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.project-overlay h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.project-overlay p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Animation for slide transition */
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+    text-align: center;
+    background-color: #a7a7a7;
+}
+
+#about img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+#skills {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.progress {
+    background-color: #76c7c0;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #76c7c0;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Show the first project slide by default */
+.project-slide:first-child {
+    display: block;
+}
+
